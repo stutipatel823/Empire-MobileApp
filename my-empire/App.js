@@ -6,6 +6,7 @@ import FontAwesome from "react-native-vector-icons/FontAwesome"; // Import FontA
 
 import HomeScreen from "./screens/HomeScreen";
 import CartScreen from "./screens/CartScreen";
+import WishlistScreen from "./screens/WishlistScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -40,7 +41,7 @@ export default function App() {
         />
         <Tab.Screen
           name="WISHLIST"
-          component={HomeScreen}
+          component={WishlistScreen}
           options={{
             tabBarIcon: ({ size, focused }) => (
               <FontAwesome name={"heart"} size={size} color={focused ? '#212121' : 'grey'} />

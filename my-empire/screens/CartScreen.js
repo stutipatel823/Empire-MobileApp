@@ -24,42 +24,42 @@ export default function CartScreen() {
       id: "1",
       name: "Chopard Happy",
       price: 249.0,
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure1.png"),
       quantity: 1,
     },
     {
       id: "2",
       name: "BVLGARI Rose Goldea",
       price: 229.0,
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure1.png"),
       quantity: 1,
     },
     {
       id: "3",
       name: "Dior Happy",
       price: 229.0,
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure1.png"),
       quantity: 1,
     },
     {
       id: "4",
       name: "Dior Happy",
       price: 229.0,
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure1.png"),
       quantity: 1,
     },
     {
       id: "5",
       name: "Dior Happy",
       price: 229.0,
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure1.png"),
       quantity: 1,
     },
     {
       id: "6",
       name: "Dior Happy",
       price: 229.0,
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure1.png"),
       quantity: 1,
     },
   ]);
@@ -128,7 +128,7 @@ export default function CartScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>My Cart</Text>
+      <Text style={styles.title}>My Cart 🛒</Text>
       <Text
         style={{
           color: "#212121",
@@ -192,10 +192,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    borderWidth: 1,
+    // borderWidth: 1,
     backgroundColor: "#FFFCF5",
   },
-  text: {
+  title: {
     fontFamily: "Plus Jakarta Sans",
     fontSize: 20,
     textAlign: "center",
@@ -204,43 +204,12 @@ const styles = StyleSheet.create({
     marginTop: "15%",
     marginBottom: 10,
   },
-  promoContainer: {
-    marginTop: '5%', // Adjust as needed
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  input: {
-    paddingHorizontal: 10,
-    fontSize: 16,
-    color: "#d9d9d9",
-    borderColor: "#d9d9d9",
-    borderWidth: 1,
-    borderTopLeftRadius: 10,
-    borderBottomLeftRadius: 10,
-    width: "55%",
-    height: 50, // Adjust height as needed
-    marginLeft: "2%",
-  },
-  button: {
-    backgroundColor: "#000",
-    borderWidth: 1,
-    borderTopRightRadius: 10,
-    borderBottomRightRadius: 10,
-    width: "40%",
-    justifyContent: "center",
-    alignItems: "center",
-    height: 50, // Adjust height to match input field
-  },
-  buttonText: {
-    color: "#fff",
-    fontSize: 18,
-  },
   listContainer: {
     width: "95%",
     marginLeft: "2%",
     borderTopWidth: 1,
     borderColor: "#d9d9d9",
-    marginBottom: 10, // Add margin bottom to separate from bottomContainer
+    // marginBottom: 10, // Add margin bottom to separate from bottomContainer
   },
   itemContainer: {
     flexDirection: "row",
@@ -297,13 +266,17 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     borderRadius: 10,
   },
+  bottomContainer: {
+    height: "30%",
+    // borderWidth: 1,
+  },
   totalContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     padding: 20,
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
+    // borderTopWidth: 1,
+    // borderBottomWidth: 1,
     borderColor: "#d9d9d9",
     width: "95%",
     marginLeft: "2%",
@@ -319,11 +292,42 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "bold",
   },
+  promoContainer: {
+    // marginTop: '2%', // Adjust as needed
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  input: {
+    paddingHorizontal: 10,
+    fontSize: 16,
+    color: "#d9d9d9",
+    borderColor: "#d9d9d9",
+    borderWidth: 1,
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10,
+    width: "55%",
+    height: 50, // Adjust height as needed
+    marginLeft: "2%",
+  },
+  button: {
+    backgroundColor: "#000",
+    borderWidth: 1,
+    borderTopRightRadius: 10,
+    borderBottomRightRadius: 10,
+    width: "40%",
+    justifyContent: "center",
+    alignItems: "center",
+    height: 50, // Adjust height to match input field
+  },
+  buttonText: {
+    color: "#fff",
+    fontSize: 18,
+  },
   freeShippingContainer: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: '5%', // Adjust as needed
+    marginTop: '2%', // Adjust as needed
   },
   freeShippingText: {
     marginLeft: 5,
@@ -334,11 +338,10 @@ const styles = StyleSheet.create({
   checkoutButtonContainer: {
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: '15%', // Add margin bottom to separate from bottomContainer
+    marginBottom: '4%', // Add margin bottom to separate from bottomContainer
   },
   checkoutButton: {
-    borderWidth: 1,
-    padding: 10,
+    // padding: 10,
     width: "95%",
     alignItems: "center",
     justifyContent: "center",
@@ -350,9 +353,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     color: "white",
-  },
-  bottomContainer: {
-    height: "35%",
-    // borderWidth: 1,
   },
 });

@@ -27,55 +27,49 @@ export default function HomeScreen() {
       id: "1",
       name: "Chopard Happy",
       price: "$249.00",
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure1.png"),
     },
     {
       id: "2",
       name: "BVLGARI Rose Goldea",
       price: "$229.00",
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure2.png"),
     },
     {
       id: "3",
       name: "Dior Happy",
       price: "$229.00",
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure3.png"),
     },
     {
       id: "4",
       name: "Lancome Idol",
       price: "$109.00",
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure4.png"),
     },
     {
       id: "5",
       name: "YSL Mon Paris",
       price: "$149.00",
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure5.png"),
     },
     {
       id: "6",
       name: "YSL Libre",
       price: "$139.00",
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure6.png"),
     },
     {
       id: "7",
       name: "YSL Libre",
       price: "$139.00",
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure7.png"),
     },
     {
       id: "8",
       name: "YSL Libre",
       price: "$139.00",
-      image: require("../assets/Figure1.jpg"),
-    },
-    {
-      id: "9",
-      name: "YSL Libre",
-      price: "$139.00",
-      image: require("../assets/Figure1.jpg"),
+      image: require("../assets/Figure8.png"),
     },
   ];
 
@@ -216,7 +210,7 @@ const styles = StyleSheet.create({
     width: width,
     paddingHorizontal: 16,
     // marginTop: 16,
-    paddingBottom: "10%", // Adjusted padding to create space between suggestions and bottom of screen
+    // paddingBottom: "5%", // Adjusted padding to create space between suggestions and bottom of screen
   },
   itemContainer: {
     height: height / 4,
