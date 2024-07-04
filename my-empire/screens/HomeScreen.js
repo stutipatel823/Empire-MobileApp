@@ -10,6 +10,7 @@ import {
   Dimensions,
 } from "react-native";
 import Feather from "react-native-vector-icons/Feather"; // Import FontAwesome from react-native-vector-icons
+import "@fontsource/plus-jakarta-sans"; // Defaults to weight 400
 
 const { width, height } = Dimensions.get("window");
 
@@ -21,7 +22,7 @@ export default function HomeScreen() {
     // You can add logic here to perform actions when a button is pressed
   };
 
-  const perfumes = [
+  const products = [
     {
       id: "1",
       name: "Chopard Happy",
@@ -150,7 +151,7 @@ export default function HomeScreen() {
 
       {/* Grid */}
       <FlatList
-        data={perfumes}
+        data={products}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         numColumns={2}
@@ -162,6 +163,7 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily: "Plus Jakarta Sans",
     flex: 1,
     backgroundColor: "#FFFCF5",
     alignItems: "center",
@@ -172,7 +174,8 @@ const styles = StyleSheet.create({
     width: "90%",
     paddingHorizontal: 10,
     marginTop: "15%",
-    backgroundColor: "#f2f2f2",
+    // backgroundColor: "#f2f2f2",
+    backgroundColor: "#ffffff",
     borderRadius: 8,
     borderColor: "#d9d9d9",
     borderWidth: 1,

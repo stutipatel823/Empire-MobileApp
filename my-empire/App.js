@@ -5,6 +5,7 @@ import { StyleSheet } from "react-native";
 import FontAwesome from "react-native-vector-icons/FontAwesome"; // Import FontAwesome from react-native-vector-icons
 
 import HomeScreen from "./screens/HomeScreen";
+import CartScreen from "./screens/CartScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -30,7 +31,7 @@ export default function App() {
         />
         <Tab.Screen
           name="CART"
-          component={HomeScreen}
+          component={CartScreen}
           options={{
             tabBarIcon: ({ size, focused }) => (
               <FontAwesome name={"shopping-cart"} size={size} color={focused ? '#212121' : 'grey'} />
@@ -64,5 +65,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "red",
+    
   },
 });
